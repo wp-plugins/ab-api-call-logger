@@ -33,6 +33,8 @@ Usually, this means I create a class and that class is filled with methods that 
 		$ab_api_logger->log_api_call( $ab_api_logger->api_calls, $api_url );
 	}
 
+Pull requests can be submitted via [Github](https://github.com/technosailor/ab-api-call-logger)
+
 == Screenshots ==
 
 1. This screenshot (properly obfuscated to protect the innocent) shows a clickable list of API calls performed.
