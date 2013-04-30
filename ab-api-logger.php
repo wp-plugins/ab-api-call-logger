@@ -35,7 +35,10 @@ class AB_API_Logger {
 	}
 
 	public function add_adminbar_item( $admin_bar ) {
-		if( !current_user_can( 'administrator' ) || ( is_multisite() && !is_super_admin() ) )
+		if( is_multisite() && !is_super_admin() )
+			return false;
+
+		if( !current_user_can( 'administrator' ) )
 			return false;
 
 		$admin_bar->add_menu( array(
